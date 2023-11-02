@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 30px;
+    /* background-color: #bcf59a; */
+    background-color: #97f5c3;
+    background-image: linear-gradient(45deg, #9bfec9 20%, #f1ef9f 70%);
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.options label {
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.options input[type="radio"] {
+    margin: 0;
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+    accent-color: blue;
+    
+    /* opacity: 0; */
+   
+   
+}
+/* .options input[type="radio"]:checked{
+    outline: none;
+    background-color: blue;
+} */
+
+/* .options input[type="radio"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    margin-right: 10px;
+    
+} */
+
+/* .options input[type="radio"]:checked + label::before {
+    background-color: #007bff;
+    border: 2px solid #007bff;
+} */
+
+.next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-btn:hover {
+    background-color: #0056b3;
+}
+
+.result-container {
+    display: none;
+    max-width: 400px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h2 {
+    margin-bottom: 10px;
+}
+
+.result-container p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result-container p.message {
+    font-weight: normal;
+    color: #555;
+}
